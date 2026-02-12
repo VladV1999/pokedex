@@ -6,6 +6,7 @@ import { commandHelp } from "./command_help.js";
 import { commandInspect } from "./command_inspect.js";
 import { commandMap } from "./command_map.js";
 import { commandMapB } from "./command_mapb.js";
+import { commandPokedex } from "./command_pokedex.js";
 import { PokeAPI, Pokemon } from "./pokeapi.js";
 import { Cache } from "./pokecache.js";
 
@@ -70,6 +71,11 @@ export function initState(): State {
                 name: "inspect",
                 description: "a more detailed inspection of the pokemon's stats!",
                 callback: commandInspect,
+            },
+            pokedex: {
+                name: "pokedex",
+                description: "lists the pokemon in the pokedex",
+                callback: commandPokedex,
             }
         }
     return {
