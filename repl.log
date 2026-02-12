@@ -2,6 +2,17 @@
 > pokedex@1.0.0 dev
 > npx tsc && node dist/main.js
 
-Pokedex >Your command was: charmander
-Pokedex >Your command was: pikachu
-Pokedex >
+Pokedex > Exploring pastoria-city-area...
+Found Pokemon:
+- tentacool
+- tentacruel
+- magikarp
+- gyarados
+- remoraid
+- octillery
+- wingull
+- pelipper
+- shellos
+- gastrodon
+Pokedex > Welcome to the Pokedex!
+Closing the Pokedex... Goodbye!

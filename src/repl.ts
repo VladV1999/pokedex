@@ -16,6 +16,7 @@ export async function startREPL(state: State) {
             rl.prompt();
         } else {
             const commandName = words[0];
+            const restOfCommand = words.slice(1, words.length);
             const commands = state.commands;
             const cmd = commands[commandName];
             if (!cmd) {
@@ -26,7 +27,7 @@ export async function startREPL(state: State) {
                 return;
             }
             try {
-                await cmd.callback(state);
+                await cmd.callback(state, ...restOfCommand);
             } catch (e) {
                 console.log(e);
             }
